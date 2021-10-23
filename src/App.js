@@ -79,8 +79,8 @@ function App() {
            Welcome!
           </Typography> 
           <Typography variant="h5" align = "left" className={classes.littleSpace} color="#59503d">
-          Hi! My name is Anne Shen and I’m currently a second year 
-studying at Northeastern University. I’m pursuing a B.S. in 
+          Hi! My name is Anne Shen. I’m currently a second year student
+studying at Northeastern University and pursuing a B.S. in 
 Computer Science and a minor in Animation. In my free time 
 I love to explore Boston, decorate my room, and play with 
 my dog!
@@ -88,7 +88,7 @@ my dog!
 This website serves as my portfolio for various 
 school/personal/club projects and I hope it showcases
 my different skills and abilities. I’m actively looking for
-entry level opportunities so please feel free to contact
+entry level opportunities, so please feel free to contact
 me :) 
           </Typography>
         <img width = "450" height = "450" src={face} className={classes.logo}/> 
