@@ -4,8 +4,9 @@ import NavBar from './components/NavBar'
 import Grid from './components/Grid'
 import Footer from './components/Footer'
 import Container from '@material-ui/core/Container';
-import face from './myFace.png'
-import ollie from './ollie.png'
+import face from './images/myFace.png';
+import ollie from './images/ollie.png';
+import chewy from './images/chewy.png';
 
 
 
@@ -94,9 +95,16 @@ me :)
         <img width = "450" height = "450" src={face} className={classes.logo}/> 
         <img width = "250" height = "250" src={ollie} className={classes.logo}/> 
         </Container>
+        <Container id="work" maxWidth = "xl" alight = "left">
+        <Typography variant = "h5" align = "left" className={classes.bigSpace} color="#3d3627">
+          Work Experience:
+        </Typography> 
+        <img width = "30%" height = "30%" src={chewy} className={classes.logo}/> 
         <Typography variant = "h5" align = "left" className={classes.bigSpace} color="#3d3627">
           Projects I've Worked On:
         </Typography> 
+        </Container>
+
         <div id = "projects" className={`${classes.grid} ${classes.bigSpace}`}>
           <Grid icon={<AndroidIcon style={{fill: "#5b755b", height:"125", width:"125"}}/>}  title="AR Interior Design" btnTitle="Show me More" />
           <Grid icon={<AccountBalanceIcon style={{fill: "#5b755b", height:"125", width:"125"}}/>} title="Bud.get" btnTitle="Show me More"/>

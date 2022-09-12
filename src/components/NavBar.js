@@ -1,9 +1,9 @@
 import React from 'react'
-import CustomBtn from './CustomBtn'
-import logo from '../logo.png'
-import name from '../name.png'
+import logo from '../images/logo.png'
+import name from '../images/name.png'
 import {Toolbar, Typography} from '@material-ui/core'
 import {makeStyles} from "@material-ui/core/styles"; 
+import Pdf from '../resume.pdf';
 
 const styles = makeStyles({
     bar:{
@@ -14,13 +14,13 @@ const styles = makeStyles({
           }
     },
     logo: {
-        width: "15%", 
+        width: "8%", 
         ['@media (max-width:780px)']: { 
            display: "none"
            }
     },
     logoMobile:{
-        width: "100%", 
+        width: "75%", 
         display: "none", 
         ['@media (max-width:780px)']: { 
             display: "inline-block"
@@ -33,7 +33,7 @@ const styles = makeStyles({
             color:  "#4f25c8"
         },
         ['@media (max-width:780px)']: { 
-            paddingBottom: "1rem"    }
+            paddingBottom: "0.5rem"    }
     }
 })
 
@@ -43,16 +43,17 @@ function NavBar() {
             <Toolbar height = "50px" position="fixed" color="rgba(0, 0, 0, 0.87)" top = "0px" className={classes.bar}>   
                 <img src={logo} className={classes.logo}/> 
                 <img src={name} className={classes.logo}/> 
-                <Typography onClick={() => window.location.replace("/#about")} variant="h6"  className={classes.menuItem}>
+                <Typography onClick={() => window.location.replace("/#about")} variant="subtitle1"  className={classes.menuItem}>
                    About
                 </Typography>
-                <Typography variant="h6" className={classes.menuItem}>
-                    Animations
-                </Typography>
-                <Typography onClick={() => window.location.replace("/#projects")} variant="h6" className={classes.menuItem}>
+                <a href = {Pdf} target = "_blank">Resume</a>
+                <Typography onClick={() => window.location.replace("/#projects")} variant="subtitle1" className={classes.menuItem}>
                     Projects
                 </Typography>
-                <Typography variant="h6" className={classes.menuItem}>
+                <Typography  onClick={() => window.location.replace("/#portfolio")} variant="subtitle1" className={classes.menuItem}>
+                    Portfolio
+                </Typography>
+                <Typography variant="subtitle1" className={classes.menuItem}>
                     Contact Me!
                 </Typography>
             </Toolbar>
