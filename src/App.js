@@ -13,13 +13,6 @@ import servicenow from './images/servicenow.png';
 
 import './App.css';
 import { Helmet } from 'react-helmet';
-//changes to imports 
-import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
-import AndroidIcon from '@material-ui/icons/Android';
-import ComputerIcon from '@material-ui/icons/Computer';
-import SportsSoccerIcon from '@material-ui/icons/SportsSoccer';
-import VideogameAssetIcon from '@material-ui/icons/VideogameAsset';
-import CreateIcon from '@material-ui/icons/Create';
 
 const theme = createMuiTheme({
   palette: {

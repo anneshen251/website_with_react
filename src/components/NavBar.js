@@ -1,9 +1,8 @@
 import React from 'react'
-import logo from '../images/logo.png'
 import name from '../images/name.png'
 import {Toolbar, Typography} from '@material-ui/core'
 import {makeStyles} from "@material-ui/core/styles"; 
-import Pdf from '../resume.pdf';
+import Pdf from '../resume2.pdf';
 
 const styles = makeStyles({
     bar:{
