@@ -41,19 +41,18 @@ function NavBar() {
     const classes = styles()
     return (
             <Toolbar height = "50px" position="fixed" color="rgba(0, 0, 0, 0.87)" top = "0px" className={classes.bar}>   
-                <img src={logo} className={classes.logo}/> 
                 <img src={name} className={classes.logo}/> 
                 <Typography onClick={() => window.location.replace("/#about")} variant="subtitle1"  className={classes.menuItem}>
                    About
                 </Typography>
-                <a href = {Pdf} target = "_blank">Resume</a>
+                <Typography  onClick={() => window.location.replace("/#experience")} variant="subtitle1" className={classes.menuItem}>
+                    Work Experience
+                </Typography>
+                <a href = {Pdf} target = "_blank" className = {classes.menuItem}>Resume</a>
                 <Typography onClick={() => window.location.replace("/#projects")} variant="subtitle1" className={classes.menuItem}>
                     Projects
                 </Typography>
-                <Typography  onClick={() => window.location.replace("/#portfolio")} variant="subtitle1" className={classes.menuItem}>
-                    Portfolio
-                </Typography>
-                <Typography variant="subtitle1" className={classes.menuItem}>
+                <Typography onClick={() => window.location.replace("/#socials")} variant="subtitle1" className={classes.menuItem}>
                     Contact Me!
                 </Typography>
             </Toolbar>
