@@ -74,7 +74,7 @@ function App() {
            Welcome!
           </Typography> 
           <Typography variant="h5" align = "left" className={classes.littleSpace} color="#59503d">
-          Hi! My name is Anne Shen. I’m currently a second year student
+          Hi! My name is Anne Shen. I’m currently a third year student
 studying at Northeastern University and pursuing a B.S. in 
 Computer Science and a minor in Animation. In my free time 
 I love to explore Boston, decorate my room, and play with 
